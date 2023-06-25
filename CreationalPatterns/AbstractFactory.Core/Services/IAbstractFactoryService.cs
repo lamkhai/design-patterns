@@ -1,8 +1,9 @@
 ﻿using AbstractFactory.Core.Factories.Abstracts;
+using AbstractFactory.Core.Models;
 
 namespace AbstractFactory.Core.Services;
 
 public interface IAbstractFactoryService
 {
-    void Run(AbstractCultureFactory cultureFactory);
+    LanguageCountryModel GetLanguageCountry(AbstractCultureFactory cultureFactory);
 }
