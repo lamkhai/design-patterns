@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CreationalPatterns\AbstractFactory.Infratructure\AbstractFactory.Infratructure.csproj" />
+    <ProjectReference Include="..\CreationalPatterns\Builder.Infratructure\Builder.Infratructure.csproj" />
   </ItemGroup>
 
 </Project>

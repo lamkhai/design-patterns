@@ -1,4 +1,5 @@
 using AbstractFactory.Infratructure;
+using Builder.Infratructure;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddAbstractFactoryServices();
+builder.Services.AddBuilderServices();
 
 var app = builder.Build();
 
