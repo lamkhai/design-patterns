@@ -1,8 +1,8 @@
 ﻿using Builder.Core.Services;
-using Builder.Infratructure.Services;
+using Builder.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Builder.Infratructure;
+namespace Builder.Infrastructure;
 
 public static class Startup
 {

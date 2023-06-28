@@ -2,7 +2,7 @@
 using AbstractFactory.Core.Models;
 using AbstractFactory.Core.Services;
 
-namespace AbstractFactory.Infratructure.Services;
+namespace AbstractFactory.Infrastructure.Services;
 
 public class AbstractFactoryService : IAbstractFactoryService
 {

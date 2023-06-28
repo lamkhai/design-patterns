@@ -1,5 +1,5 @@
-using AbstractFactory.Infratructure;
-using Builder.Infratructure;
+using AbstractFactory.Infrastructure;
+using Builder.Infrastructure;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);

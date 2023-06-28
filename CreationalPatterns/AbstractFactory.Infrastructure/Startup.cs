@@ -1,8 +1,8 @@
 ﻿using AbstractFactory.Core.Services;
-using AbstractFactory.Infratructure.Services;
+using AbstractFactory.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AbstractFactory.Infratructure;
+namespace AbstractFactory.Infrastructure;
 
 public static class Startup
 {

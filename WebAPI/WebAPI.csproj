@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CreationalPatterns\AbstractFactory.Infratructure\AbstractFactory.Infratructure.csproj" />
-    <ProjectReference Include="..\CreationalPatterns\Builder.Infratructure\Builder.Infratructure.csproj" />
+    <ProjectReference Include="..\CreationalPatterns\AbstractFactory.Infrastructure\AbstractFactory.Infrastructure.csproj" />
+    <ProjectReference Include="..\CreationalPatterns\Builder.Infrastructure\Builder.Infrastructure.csproj" />
     <ProjectReference Include="..\LK.Shared\LK.Shared.csproj" />
   </ItemGroup>
 

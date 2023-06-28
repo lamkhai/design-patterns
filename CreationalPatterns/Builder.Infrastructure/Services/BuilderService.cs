@@ -1,7 +1,7 @@
 ﻿using Builder.Core.Models.Abstracts;
 using Builder.Core.Services;
 
-namespace Builder.Infratructure.Services;
+namespace Builder.Infrastructure.Services;
 
 /// <summary>
 /// The 'Director'
