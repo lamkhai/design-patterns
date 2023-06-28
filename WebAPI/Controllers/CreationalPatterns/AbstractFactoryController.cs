@@ -1,8 +1,8 @@
-using AbstractFactory.Core.Enums;
 using AbstractFactory.Core.Factories.Abstracts;
 using AbstractFactory.Core.Factories.Concretes;
 using AbstractFactory.Core.Models;
 using AbstractFactory.Core.Services;
+using LK.Shared.Enums;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI.Controllers.Base;
 
@@ -20,11 +20,11 @@ public class AbstractFactoryController : APIControllerBase<AbstractFactoryContro
     }
 
     [HttpGet("GetLanguageCountry")]
-    public LanguageCountryModel? GetLanguageCountry(CultureEnum culture)
+    public LanguageCountryModel? GetLanguageCountry(CultureEnum cultureType)
     {
         AbstractCultureFactory cultureFactory;
 
-        switch (culture)
+        switch (cultureType)
         {
             case CultureEnum.enGB:
                 cultureFactory = new ConcreteEngFactory();

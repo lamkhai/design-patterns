@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory.Infratructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{094E7E16-F929-47E9-B521-8EC1BFE92DC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder.Core", "CreationalPatterns\Builder.Core\Builder.Core.csproj", "{7DBDA649-BBB2-481C-9ADB-FCC4452FFB73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder.Core", "CreationalPatterns\Builder.Core\Builder.Core.csproj", "{7DBDA649-BBB2-481C-9ADB-FCC4452FFB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder.Infratructure", "CreationalPatterns\Builder.Infratructure\Builder.Infratructure.csproj", "{385DB2D4-AB32-47C6-A6E9-2242B37BC129}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder.Infratructure", "CreationalPatterns\Builder.Infratructure\Builder.Infratructure.csproj", "{385DB2D4-AB32-47C6-A6E9-2242B37BC129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LK.Shared", "LK.Shared\LK.Shared.csproj", "{D59102DD-8F4D-4B55-A613-64A037EE9D6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{385DB2D4-AB32-47C6-A6E9-2242B37BC129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{385DB2D4-AB32-47C6-A6E9-2242B37BC129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{385DB2D4-AB32-47C6-A6E9-2242B37BC129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D59102DD-8F4D-4B55-A613-64A037EE9D6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D59102DD-8F4D-4B55-A613-64A037EE9D6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D59102DD-8F4D-4B55-A613-64A037EE9D6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D59102DD-8F4D-4B55-A613-64A037EE9D6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

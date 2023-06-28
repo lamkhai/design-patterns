@@ -1,4 +1,4 @@
-﻿namespace AbstractFactory.Core.Enums;
+﻿namespace LK.Shared.Enums;
 
 public enum CultureEnum
 {
