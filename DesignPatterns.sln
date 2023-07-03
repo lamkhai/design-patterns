@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory.Infrastruct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder.Infrastructure", "CreationalPatterns\Builder.Infrastructure\Builder.Infrastructure.csproj", "{B36BA667-140F-42C9-9421-FB480770E81A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod.Core", "CreationalPatterns\FactoryMethod.Core\FactoryMethod.Core.csproj", "{A1EAB753-F43B-40DB-A201-5D8A5B350522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod.Infrastructure", "CreationalPatterns\FactoryMethod.Infrastructure\FactoryMethod.Infrastructure.csproj", "{12916BAC-1116-4781-839E-73648192D322}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,14 @@ Global
 		{B36BA667-140F-42C9-9421-FB480770E81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B36BA667-140F-42C9-9421-FB480770E81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B36BA667-140F-42C9-9421-FB480770E81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1EAB753-F43B-40DB-A201-5D8A5B350522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1EAB753-F43B-40DB-A201-5D8A5B350522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1EAB753-F43B-40DB-A201-5D8A5B350522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1EAB753-F43B-40DB-A201-5D8A5B350522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12916BAC-1116-4781-839E-73648192D322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12916BAC-1116-4781-839E-73648192D322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12916BAC-1116-4781-839E-73648192D322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12916BAC-1116-4781-839E-73648192D322}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +68,8 @@ Global
 		{7DBDA649-BBB2-481C-9ADB-FCC4452FFB73} = {D66C7D61-45C7-4FF1-BE8A-496B7A31DA51}
 		{30256FB9-2E3B-4009-A94F-CE1C00B571C7} = {D66C7D61-45C7-4FF1-BE8A-496B7A31DA51}
 		{B36BA667-140F-42C9-9421-FB480770E81A} = {D66C7D61-45C7-4FF1-BE8A-496B7A31DA51}
+		{A1EAB753-F43B-40DB-A201-5D8A5B350522} = {D66C7D61-45C7-4FF1-BE8A-496B7A31DA51}
+		{12916BAC-1116-4781-839E-73648192D322} = {D66C7D61-45C7-4FF1-BE8A-496B7A31DA51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91179563-BDF2-46DE-BDE8-B3A7B332B0B5}
