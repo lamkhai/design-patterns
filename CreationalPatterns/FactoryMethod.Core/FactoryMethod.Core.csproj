@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\LK.Shared\LK.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

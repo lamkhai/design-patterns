@@ -1,4 +1,7 @@
+using FactoryMethod.Core.Models.Abstracts;
 using FactoryMethod.Core.Services;
+using LK.Shared.Enums;
+using Microsoft.AspNetCore.Mvc;
 using WebAPI.Controllers.Base;
 
 namespace WebAPI.Controllers.CreationalPatterns;
@@ -12,5 +15,11 @@ public class FactoryMethodController : APIControllerBase<FactoryMethodController
             patternService,
             logger)
     {
+    }
+
+    [HttpGet("GetCountries")]
+    public List<CountryModel> GetCountries(ContinentEnum continentType)
+    {
+        return _patternService.GetCountries(continentType);
     }
 }
