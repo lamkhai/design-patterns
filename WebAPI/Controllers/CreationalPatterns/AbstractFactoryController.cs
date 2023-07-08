@@ -1,6 +1,4 @@
-using AbstractFactory.Core.Factories.Abstracts;
-using AbstractFactory.Core.Factories.Concretes;
-using AbstractFactory.Core.Models;
+using AbstractFactory.Core.Models.Responses;
 using AbstractFactory.Core.Services;
 using LK.Shared.Enums;
 using Microsoft.AspNetCore.Mvc;
@@ -19,23 +17,9 @@ public class AbstractFactoryController : APIControllerBase<AbstractFactoryContro
     {
     }
 
-    [HttpGet("GetLanguageCountry")]
-    public LanguageCountryModel? GetLanguageCountry(CultureEnum cultureType)
+    [HttpGet("GetCulture")]
+    public CultureResponse? GetCulture(CultureEnum cultureType)
     {
-        AbstractCultureFactory cultureFactory;
-
-        switch (cultureType)
-        {
-            case CultureEnum.enGB:
-                cultureFactory = new ConcreteEngFactory();
-                break;
-            case CultureEnum.viVN:
-                cultureFactory = new ConcreteVietFactory();
-                break;
-            default:
-                return null;
-        }
-
-        return _patternService.GetLanguageCountry(cultureFactory);
+        return _patternService.GetCulture(cultureType);
     }
 }

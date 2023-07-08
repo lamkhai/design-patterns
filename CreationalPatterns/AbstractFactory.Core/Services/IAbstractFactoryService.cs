@@ -1,9 +1,9 @@
-﻿using AbstractFactory.Core.Factories.Abstracts;
-using AbstractFactory.Core.Models;
+﻿using AbstractFactory.Core.Models.Responses;
+using LK.Shared.Enums;
 
 namespace AbstractFactory.Core.Services;
 
 public interface IAbstractFactoryService
 {
-    LanguageCountryModel GetLanguageCountry(AbstractCultureFactory cultureFactory);
+    CultureResponse? GetCulture(CultureEnum cultureType);
 }

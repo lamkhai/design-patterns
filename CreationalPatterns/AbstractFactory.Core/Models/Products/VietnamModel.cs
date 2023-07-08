@@ -1,9 +1,9 @@
-﻿using AbstractFactory.Core.Models.Abstracts;
+﻿using AbstractFactory.Core.Models.ProductAbstracts;
 using LK.Shared.Constants;
 
-namespace AbstractFactory.Core.Models.Concretes;
+namespace AbstractFactory.Core.Models.Products;
 
-public class ConcreteVietnamModel : AbstractCountryModel
+public class VietnamModel : CountryModel
 {
     public override string Capital { get; set; } = CapitalConstants.Hanoi;
 
