@@ -6,7 +6,7 @@ public class CultureResponse
 {
     public string? Name { get; set; }
 
-    public CountryModel? Country { get; set; }
+    public Country? Country { get; set; }
 
-    public LanguageModel? Language { get; set; }
+    public Language? Language { get; set; }
 }

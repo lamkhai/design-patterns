@@ -4,7 +4,7 @@ namespace AbstractFactory.Core.Models.FactoryAbstracts;
 
 public abstract class CultureFactory
 {
-    public abstract CountryModel CreateCountry();
+    public abstract Country CreateCountry();
 
-    public abstract LanguageModel CreateLanguage();
+    public abstract Language CreateLanguage();
 }

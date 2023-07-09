@@ -6,12 +6,12 @@ namespace AbstractFactory.Core.Models.Factories;
 
 public class VietFactory : CultureFactory
 {
-    public override CountryModel CreateCountry()
+    public override Country CreateCountry()
     {
         return new VietnamModel();
     }
 
-    public override LanguageModel CreateLanguage()
+    public override Language CreateLanguage()
     {
         return new VietnameseModel();
     }

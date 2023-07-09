@@ -6,8 +6,8 @@ namespace AbstractFactory.Core.Models.Clients;
 
 public class Culture
 {
-    private readonly CountryModel _country;
-    private readonly LanguageModel _language;
+    private readonly Country _country;
+    private readonly Language _language;
     
     public Culture(CultureFactory cultureFactory)
     {
