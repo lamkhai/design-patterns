@@ -4,12 +4,12 @@ using AbstractFactory.Core.Models.Responses;
 
 namespace AbstractFactory.Core.Models.Clients;
 
-public class Culture
+public class CultureModel
 {
     private readonly Country _country;
     private readonly Language _language;
     
-    public Culture(CultureFactory cultureFactory)
+    public CultureModel(CultureFactory cultureFactory)
     {
         _country = cultureFactory.CreateCountry();
         _language = cultureFactory.CreateLanguage();

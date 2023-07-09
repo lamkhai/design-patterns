@@ -4,15 +4,15 @@ using AbstractFactory.Core.Models.Products;
 
 namespace AbstractFactory.Core.Models.Factories;
 
-public class VietFactory : CultureFactory
+public class EngFactoryModel : CultureFactory
 {
     public override Country CreateCountry()
     {
-        return new VietnamModel();
+        return new EnglandModel();
     }
 
     public override Language CreateLanguage()
     {
-        return new VietnameseModel();
+        return new EnglishModel();
     }
 }

@@ -16,16 +16,16 @@ public class AbstractFactoryService : IAbstractFactoryService
         switch (cultureType)
         {
             case CultureEnum.enGB:
-                cultureFactory = new EngFactory();
+                cultureFactory = new EngFactoryModel();
                 break;
             case CultureEnum.viVN:
-                cultureFactory = new VietFactory();
+                cultureFactory = new VietFactoryModel();
                 break;
             default:
                 return null;
         }
 
-        Culture culture = new(cultureFactory);
+        CultureModel culture = new(cultureFactory);
         return culture.GetCulture();
     }
 }
