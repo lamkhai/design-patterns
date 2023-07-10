@@ -1,17 +1,15 @@
-﻿using Builder.Core.Models.Abstracts;
+﻿using Builder.Core.Models.BuilderAbstracts;
+using Builder.Core.Models.Products;
 using LK.Shared.Constants;
 using LK.Shared.Enums;
 
-namespace Builder.Core.Models.Concretes;
+namespace Builder.Core.Models.Builders;
 
-/// <summary>
-/// The 'ConcreteBuilder' class
-/// </summary>
-public class ConcreteViVNBuilderModel : AbstractCultureBuilderModel
+public class ViVNBuilderModel : CultureBuilder
 {
-    public ConcreteViVNBuilderModel()
+    public ViVNBuilderModel()
     {
-        culture = new CultureProductModel(CultureEnum.viVN);
+        culture = new CultureModel(CultureEnum.viVN);
     }
 
     public override void BuildCapital()

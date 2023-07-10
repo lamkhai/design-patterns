@@ -1,20 +1,17 @@
 ﻿using LK.Shared.Enums;
 
-namespace Builder.Core.Models;
+namespace Builder.Core.Models.Products;
 
-/// <summary>
-/// The 'Product'
-/// </summary>
-public class CultureProductModel
+public class CultureModel
 {
-    private CultureEnum _cultureType;
-    private Dictionary<string, string> _information = new Dictionary<string, string>();
-    
-    public CultureProductModel(CultureEnum cultureType)
+    private readonly CultureEnum _cultureType;
+    private readonly Dictionary<string, string> _information = new();
+
+    public CultureModel(CultureEnum cultureType)
     {
         _cultureType = cultureType;
     }
-    
+
     public string this[string key]
     {
         get { return _information[key]; }

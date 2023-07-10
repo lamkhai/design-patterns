@@ -1,4 +1,4 @@
-﻿using Builder.Core.Models.Abstracts;
+﻿using LK.Shared.Enums;
 
 namespace Builder.Core.Services;
 
@@ -7,5 +7,5 @@ namespace Builder.Core.Services;
 /// </summary>
 public interface IBuilderService
 {
-    void Construct(AbstractCultureBuilderModel builder);
+    Dictionary<string, string>? GetCultureInformation(CultureEnum cultureType);
 }

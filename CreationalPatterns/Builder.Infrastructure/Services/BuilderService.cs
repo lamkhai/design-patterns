@@ -1,18 +1,31 @@
-﻿using Builder.Core.Models.Abstracts;
+﻿using Builder.Core.Models.BuilderAbstracts;
+using Builder.Core.Models.Builders;
+using Builder.Core.Models.Directors;
 using Builder.Core.Services;
+using LK.Shared.Enums;
 
 namespace Builder.Infrastructure.Services;
 
-/// <summary>
-/// The 'Director'
-/// </summary>
 public class BuilderService : IBuilderService
 {
-    public void Construct(AbstractCultureBuilderModel builder)
+    public Dictionary<string, string>? GetCultureInformation(CultureEnum cultureType)
     {
-        builder.BuildCapital();
-        builder.BuildCountry();
-        builder.BuildCurrency();
-        builder.BuildLanguage();
+        CultureBuilder cultureBuilder;
+
+        switch (cultureType)
+        {
+            case CultureEnum.enGB:
+                cultureBuilder = new EnGBBuilderModel();
+                break;
+            case CultureEnum.viVN:
+                cultureBuilder = new ViVNBuilderModel();
+                break;
+            default:
+                return null;
+        }
+
+        CultureDirectorModel.Construct(cultureBuilder);
+
+        return cultureBuilder.Culture.GetInformation();
     }
 }
