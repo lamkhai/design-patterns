@@ -14,6 +14,7 @@
     <ProjectReference Include="..\CreationalPatterns\AbstractFactory.Infrastructure\AbstractFactory.Infrastructure.csproj" />
     <ProjectReference Include="..\CreationalPatterns\Builder.Infrastructure\Builder.Infrastructure.csproj" />
     <ProjectReference Include="..\CreationalPatterns\FactoryMethod.Infrastructure\FactoryMethod.Infrastructure.csproj" />
+    <ProjectReference Include="..\CreationalPatterns\Prototype.Infrastructure\Prototype.Infrastructure.csproj" />
     <ProjectReference Include="..\LK.Shared\LK.Shared.csproj" />
   </ItemGroup>
 
