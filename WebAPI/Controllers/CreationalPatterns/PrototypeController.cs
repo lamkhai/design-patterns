@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Prototype.Core.Concretes;
+using Prototype.Core.Models.Responses;
 using Prototype.Core.Services;
 using WebAPI.Controllers.Base;
 
@@ -20,6 +21,12 @@ public class PrototypeController : APIControllerBase<PrototypeController, IProto
     public List<Color> CloneColors([FromBody] Color color, int cloneTimes)
     {
         return _patternService.CloneColors(color, cloneTimes);
+    }
+
+    [HttpPost("ClonePeople")]
+    public List<KeyValuePair<string, PersonResponse>> ClonePeople([FromBody] Person person)
+    {
+        return _patternService.ClonePeople(person);
     }
 
     [HttpGet("GetDefault")]
