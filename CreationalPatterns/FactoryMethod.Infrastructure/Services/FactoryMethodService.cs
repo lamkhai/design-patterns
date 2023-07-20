@@ -1,4 +1,6 @@
-﻿using FactoryMethod.Core.Models.Abstracts;
+﻿using FactoryMethod.Core.Abstracts;
+using FactoryMethod.Core.Concretes;
+using FactoryMethod.Core.Models.Abstracts;
 using FactoryMethod.Core.Models.Concretes;
 using FactoryMethod.Core.Services;
 using LK.Shared.Enums;
@@ -26,5 +28,14 @@ public class FactoryMethodService : IFactoryMethodService
         }
 
         return continents.SelectMany(x => x.Countries).ToList();
+    }
+
+    public List<DefaultAbstractProduct> GetDefault()
+    {
+        var creators = new DefaultAbstractCreator[2];
+        creators[0] = new DefaultConcreteCreatorA();
+        creators[1] = new DefaultConcreteCreatorB();
+
+        return creators.Select(x => x.FactoryMethod()).ToList();
     }
 }
