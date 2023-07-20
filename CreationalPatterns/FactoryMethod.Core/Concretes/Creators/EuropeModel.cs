@@ -1,10 +1,8 @@
-﻿using FactoryMethod.Core.Models.Abstracts;
+﻿using FactoryMethod.Core.Abstracts.Creators;
+using FactoryMethod.Core.Concretes.Products;
 
-namespace FactoryMethod.Core.Models.Concretes;
+namespace FactoryMethod.Core.Concretes.Creators;
 
-/// <summary>
-/// A 'ConcreteCreator' class
-/// </summary>
 public class EuropeModel : ContinentModel
 {
     public override void CreateCountries()

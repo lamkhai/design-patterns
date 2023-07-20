@@ -1,6 +1,6 @@
-﻿using FactoryMethod.Core.Abstracts;
+﻿using FactoryMethod.Core.Abstracts.Products;
 
-namespace FactoryMethod.Core.Concretes;
+namespace FactoryMethod.Core.Concretes.Products;
 
 public class DefaultConcreteProductB : DefaultAbstractProduct
 {

@@ -1,5 +1,4 @@
-﻿using FactoryMethod.Core.Abstracts;
-using FactoryMethod.Core.Models.Abstracts;
+﻿using FactoryMethod.Core.Abstracts.Products;
 using LK.Shared.Enums;
 
 namespace FactoryMethod.Core.Services;

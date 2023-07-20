@@ -1,4 +1,4 @@
-﻿namespace FactoryMethod.Core.Abstracts;
+﻿namespace FactoryMethod.Core.Abstracts.Products;
 
 public abstract class DefaultAbstractProduct
 {

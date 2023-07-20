@@ -1,7 +1,6 @@
-﻿using FactoryMethod.Core.Abstracts;
-using FactoryMethod.Core.Concretes;
-using FactoryMethod.Core.Models.Abstracts;
-using FactoryMethod.Core.Models.Concretes;
+﻿using FactoryMethod.Core.Abstracts.Creators;
+using FactoryMethod.Core.Abstracts.Products;
+using FactoryMethod.Core.Concretes.Creators;
 using FactoryMethod.Core.Services;
 using LK.Shared.Enums;
 
